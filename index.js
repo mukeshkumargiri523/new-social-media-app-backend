@@ -8,6 +8,7 @@ import PostRoute from "./routes/PostRoute.js";
 import UploadRoute from "./routes/UploadRoute.js";
 import ChatRoute from "./routes/ChatRoute.js";
 import MessageRoute from "./routes/MessageRoute.js";
+import path from "path";
 
 import cors from "cors";
 
@@ -15,6 +16,7 @@ dotenv.config();
 const app = express();
 
 //to serve images to public
+app.use(express.static(path.resolve("build")));
 app.use(express.static("public"));
 app.use("/images", express.static("images"));
 
@@ -36,9 +38,10 @@ mongoose
   .catch((error) => console.log(error));
 
 //using routes
-app.use("/api/auth", AuthRoute);
-app.use("/api/user", UserRoute);
-app.use("/api/post", PostRoute);
-app.use("/api/upload", UploadRoute);
-app.use("/api/chat", ChatRoute);
-app.use("/api/message", MessageRoute);
+app.use("/auth", AuthRoute);
+app.use("/user", UserRoute);
+app.use("/post", PostRoute);
+app.use("/upload", UploadRoute);
+app.use("/chat", ChatRoute);
+app.use("/message", MessageRoute);
+app.get("*", (req, res) => res.sendFile(path.resolve("build", "index.html")));
