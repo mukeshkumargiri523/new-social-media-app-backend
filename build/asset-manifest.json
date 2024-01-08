@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8b4dfbe7.css",
-    "main.js": "/static/js/main.67a27796.js",
+    "main.js": "/static/js/main.0f8e8228.js",
     "static/media/Beats_main_logo-removebg-preview.png": "/static/media/Beats_main_logo-removebg-preview.54673192b42367220547.png",
     "static/media/Beatlogo-removebg-preview.png": "/static/media/Beatlogo-removebg-preview.a92a236d64a8d8b5c6d0.png",
     "static/media/postpic2.jpg": "/static/media/postpic2.c48fc9ae5596f6310601.jpg",
@@ -25,10 +25,10 @@
     "static/media/graph2-svgrepo-com.svg": "/static/media/graph2-svgrepo-com.d85429b7dd8ce88a0a555632621c9b2e.svg",
     "static/media/save-svgrepo-com.svg": "/static/media/save-svgrepo-com.399a1b5e2c358e982ee1d87df8350b1f.svg",
     "main.8b4dfbe7.css.map": "/static/css/main.8b4dfbe7.css.map",
-    "main.67a27796.js.map": "/static/js/main.67a27796.js.map"
+    "main.0f8e8228.js.map": "/static/js/main.0f8e8228.js.map"
   },
   "entrypoints": [
     "static/css/main.8b4dfbe7.css",
-    "static/js/main.67a27796.js"
+    "static/js/main.0f8e8228.js"
   ]
 }
